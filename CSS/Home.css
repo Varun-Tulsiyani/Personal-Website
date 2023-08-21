@@ -1,0 +1,142 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    background-color: black !important;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+body a {
+    text-decoration: none;
+}
+
+body .about {
+
+}
+
+body .project {
+
+}
+
+body .career {
+
+}
+
+body .blog {
+
+}
+
+header {
+    min-height: 50%;
+}
+
+.name {
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding: inherit;
+    margin: auto;
+    cursor: grab;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*
+.name:hover {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, .1);
+    transition: .3s ease all;
+}
+*/
+
+footer {
+    display: flex;
+    min-height: 50%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+footer .social-media {
+    display: inline-block;
+    margin: auto;
+}
+
+footer .mail {
+    display: inline-block;
+    margin: auto;
+    max-width: 40px;
+}
+
+footer .copyright {
+    display: inline-block;
+    margin: auto;
+}
+
+#mail {
+    max-width: 40px;
+}
+
+main {
+    flex: 1;
+}
+
+/*
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 2em;
+}
+
+div {
+    overflow: hidden !important;
+}
+
+label {
+    cursor: pointer !important;
+    user-select: none;
+    transition: .3s ease all;
+    vertical-align: middle;
+}
+
+input {
+    outline: none !important;
+    appearance: none;
+}
+
+main {
+    min-height: calc(100vh - 60px);
+    /* Fallback
+    for browsers that do not support flexbox
+    align-items: stretch;
+    justify-content: space-between;
+    display: flex;
+}
+
+footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    line-height: .7rem !important;
+    opacity: .5 !important;
+    z-index: 1 !important;
+    text-align: right !important;
+}
+*/

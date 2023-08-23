@@ -28,100 +28,69 @@ body {
     scrollbar-width: none;
 }
 
-/* Header Styles */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.9);
-    color: white;
-    padding: 10px 0;
-    transition: background-color 0.3s;
-    z-index: 1000;
+body:not(header) {
+    margin-top: 70px;
 }
 
-header.sticky {
-    background-color: transparent;
-    padding: 20px 0;
-    backdrop-filter: blur(5px);
-}
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-#logo {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
-    background-color: white; /* For illustration purposes */
-}
-
-.name {
-    flex: 1;
-    text-align: center;
-    margin: 0 20px;
-    font-size: 24px;
-}
-
-#menu {
-    display: flex;
-    align-items: center;
-}
-
-#toggle {
-    display: none;
-}
-
-label[for="toggle"] {
-    cursor: pointer;
-    font-size: 24px;
-    margin-right: 10px;
-}
-
+/* Styling for Anchor Tags */
 a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-/* Common Container Styles */
-.about, .project, .career, .blog, .social-media, .mail, .copyright {
-    position: relative;
-    width: 400px;
-    margin: 50% auto;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-/* Link Styles */
-body a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
+    color: white; /* Change as needed */
     text-decoration: none;
     text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 10px 20px;
+    position: relative; /* Add relative positioning */
+    transition: font-size 0.3s, color 0.3s;
+    display: inline-block; /* Self */
+    overflow: hidden; /* Self */
+    letter-spacing: 4px; /* Self */
 }
 
-body a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Initial position of the underline */
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0); /* Start with no underline */
+    transform-origin: left;
+    transition: transform 0.3s, bottom 0.3s;
+}
+
+a:hover {
+    font-size: 125%; /* Enlarge the text by 25% */
+    color: #ffc107; /* Change the color on hover */
+}
+
+a:hover:after {
+    transform: scaleX(1); /* Show the underline on hover */
+    bottom: -8px; /* Move the underline further down on hover */
+}
+
+/* Centering and Equal Width for Sections */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 80%; /* Adjust as needed */
+    margin: 20px auto; /* Add some space between sections */
+    padding: 40px; /* Self */
+    border-radius: 10px; /* Self */
 }
 
 /* More Info Button Animation */
+
+a.more-info-button:hover {
+    background: #03e9f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
 .more-info-button a span {
     position: absolute;
     display: block;
@@ -199,39 +168,6 @@ body a:hover {
         width: 100%;
         margin-bottom: 20px;
     }
-}
-
-/* Footer Styles */
-footer {
-    position: relative !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-    width: 100% !important;
-    bottom: 0 !important;
-    z-index: 1 !important;
-}
-
-footer div a img {
-    width: 32px;
-    height: 32px;
-}
-
-/* Name Styles */
-.name {
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    color: #ffffff;
-    letter-spacing: 1px;
-    padding: inherit;
-    margin: auto;
-    cursor: grab;
-    font-family: 'Dancing Script', cursive;
 }
 
 /* Responsive Styles */

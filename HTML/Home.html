@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/Home.css">
-    <link rel="stylesheet" href="../CSS/Header.css">
-    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link href="../CSS/Home.css" rel="stylesheet">
+    <link href="../CSS/Header.css" rel="stylesheet">
+    <link href="../CSS/Footer.css" rel="stylesheet">
+    <link href="../CSS/Common.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
     <script src="../TypeScript/Header.js"></script>
     <script src="../TypeScript/Footer.js"></script>
     <title>Varun Tulsiyani</title>
@@ -15,17 +18,19 @@
 <header id="header-placeholder"></header>
 
 <main>
-    <img src="../Images/varun.jpg" alt="My Photo" id="profile-photo">
+    <img alt="My Photo" id="profile-photo" src="../Images/varun.jpg">
     <section class="about" id="about">
         <h2>About Me</h2>
         <p>A student at the University of Wollongong in Dubai.</p>
-        <a href="About.html" class="link color-red">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Find out more about Varun
-        </a>
+        <div class="button">
+            <a class="link color-red" href="About.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Find out more about Varun
+            </a>
+        </div>
     </section>
 
     <section class="project" id="project">
@@ -33,11 +38,25 @@
         <div class="projects">
             <div class="project">
                 <div class="project-image">
-                    <img src="" alt="project-image"/>
+                    <img alt="project-image" src=""/>
                     <div class="project-overlay">
                         <div class="project-overlay-text">
-                            <a href="#">Read More</a>
-                            <a href="#">GitHub</a>
+                            <div class="button">
+                                <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Read More
+                                </a>
+                                <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -48,11 +67,25 @@
             </div>
             <div class="project">
                 <div class="project-image">
-                    <img src="" alt="project-image"/>
+                    <img alt="project-image" src=""/>
                     <div class="project-overlay">
                         <div class="project-overlay-text">
-                            <a href="#">Read More</a>
-                            <a href="#">GitHub</a>
+                            <div class="button">
+                                <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Read More
+                                </a>
+                                <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,13 +96,15 @@
             </div>
         </div>
 
-        <a href="Projects.html" class="more-info-button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            More Projects
-        </a>
+        <div class="button">
+            <a class="more-info-button" href="Projects.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                More Projects
+            </a>
+        </div>
     </section>
 
     <section class="career" id="career">
@@ -80,25 +115,29 @@
             <h4 class="date">Jan 2023 - Present</h4>
         </div>
         <!-- Additional career information can be added here -->
-        <a href="" class="more-info-button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Get CV
-        </a>
+        <div class="button">
+            <a class="more-info-button" href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Get CV
+            </a>
+        </div>
     </section>
 
     <section class="blog" id="blog">
         <h2>Blog</h2>
         <p>Here's my latest blog post</p>
-        <a href="" class="more-info-button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Blog Page
-        </a>
+        <div class="button">
+            <a class="more-info-button" href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Blog Page
+            </a>
+        </div>
     </section>
 </main>
 

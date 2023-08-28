@@ -1,2 +1,5 @@
 # Ignore IDE directory
 .idea/
+
+# Ignore Node Modules directory
+/node_modules/

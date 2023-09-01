@@ -4,6 +4,7 @@ fetch('header.html')
         return response.text();
     })
     .then(function(data: string): void {
+        // @ts-ignore
         let headerPlaceholder: HTMLElement = document.getElementById('header-placeholder');
         if (headerPlaceholder) {
             headerPlaceholder.innerHTML = data;

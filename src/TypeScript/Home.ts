@@ -13,8 +13,11 @@ interface HTMLElementWithStyle extends HTMLElement {
 
 // Scroll event handler
 window.addEventListener("scroll", (): void => {
+    // @ts-ignore
     const header: HTMLElementWithClassList = document.querySelector("header");
+    // @ts-ignore
     const logo: HTMLElementWithStyle = document.getElementById("logo");
+    // @ts-ignore
     const name: HTMLElementWithStyle = document.getElementById("name");
     const scroll: number = (window as ScrollEventTarget).scrollY;
 
@@ -31,6 +34,7 @@ window.addEventListener("scroll", (): void => {
 
 // Hamburger menu event handler
 document.getElementById("hamburger")?.addEventListener("click", (): void => {
+    // @ts-ignore
     const navMenu: HTMLElementWithClassList = document.getElementById("navMenu");
     navMenu.classList.toggle("active");
 });
@@ -40,6 +44,7 @@ const navItems: NodeListOf<Element> = document.querySelectorAll(".nav-menu a");
 
 navItems.forEach((item: Element): void => {
     item.addEventListener("click", (): void => {
+        // @ts-ignore
         const navMenu: HTMLElementWithClassList = document.getElementById("navMenu");
         navMenu.classList.remove("active");
     });

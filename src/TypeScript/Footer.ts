@@ -4,6 +4,7 @@ fetch('footer.html')
         return response.text();
     })
     .then(function(data: string): void {
+        // @ts-ignore
         let footerPlaceholder: HTMLElement = document.getElementById('footer-placeholder');
         if (footerPlaceholder) {
             footerPlaceholder.innerHTML = data;

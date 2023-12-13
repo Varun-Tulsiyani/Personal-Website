@@ -14,11 +14,11 @@ interface HTMLElementWithStyle extends HTMLElement {
 // Scroll event handler
 window.addEventListener("scroll", (): void => {
     // @ts-ignore
-    const header: HTMLElementWithClassList = document.querySelector("header");
+    const header: HTMLElementWithClassList | null = document.querySelector("header");
     // @ts-ignore
-    const logo: HTMLElementWithStyle = document.getElementById("logo");
+    const logo: HTMLElementWithStyle | null = document.getElementById("logo");
     // @ts-ignore
-    const name: HTMLElementWithStyle = document.getElementById("name");
+    const name: HTMLElementWithStyle | null = document.getElementById("name");
     const scroll: number = (window as ScrollEventTarget).scrollY;
 
     if (scroll > 10) {

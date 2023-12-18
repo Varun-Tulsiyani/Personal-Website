@@ -1,3 +1,15 @@
-# Auto detect text files and perform LF normalization
+# Auto detect text files and perform LF normalization for TypeScript files
 *.ts linguist-language=TypeScript
+* text=auto
+
+# Auto detect text files and perform LF normalization for React TypeScript files
+*.tsx linguist-language=TypeScript
+* text=auto
+
+# Auto detect text files and perform LF normalization for JavaScript files
+*.js linguist-language=JavaScript
+* text=auto
+
+# Auto detect text files and perform LF normalization for React JavaScript files
+*.jsx linguist-language=JavaScript
 * text=auto
